@@ -1,26 +1,101 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+@font-face url("https://fonts.googleapis.com/css?family=Montserrat:200");
+
+  
+body, html {
+    overflow-x: hidden !important;
+    height: 100%;
+    margin: 0;'
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background: url('/static/bg.svg') no-repeat;
+    background-size: cover;
+    padding-bottom: 5vw;
+}
+
+#left {
+    position: absolute;
+    top: 55%;
+    width: 10%;
+    height: auto;
+}
+
+#right {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 15%;
+    height: auto; 
+    z-index: 1;  
+} 
+
+nav {
+    padding: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    float: right;
+}
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #000;
+    padding: 0 30px;
+}
+
+#logo {
+    font-size: 2em;
+}
+
+.container {
+    text-align: center;
+    width: 60%;
+    margin: 110px auto;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #fff;
+    font-weight: bold;
+}
+.container p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    color: #fff;
+}
+
+upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
