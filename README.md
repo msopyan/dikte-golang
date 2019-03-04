@@ -3,20 +3,20 @@
 
 ## Running Locally
 
-Make sure you have [Go](http://golang.org/doc/install) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+Make sure you have [Go](http://golang.org/doc/install) installed.
 
 ```sh
 $ go get -u github.com/msopyan/dikte-golang
 $ cd $GOPATH/src/github.com/msopyan/dikte-golang
-$ heroku local
+$ local
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-## Deploying to Heroku
+## Deploying
 
 ```sh
 $ heroku create
-$ git push heroku master
-$ heroku open
+$ git push origin master
+$ open
 ```
